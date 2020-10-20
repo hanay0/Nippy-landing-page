@@ -70,8 +70,52 @@
 
 // start about us section
 .about-us {
+    background-color: #F3F7F8;
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+        height: 670px;
+        padding-top:120px;
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-top: 15%;
+            padding-bottom: 120px;
+            h2 {
+                text-transform: capitalize;
+                font-family: $montserrat;
+                margin-bottom: 30px;
+                font-size: 33px;
+            }
+            h3 {
+                font-family: $playFair;
+                color: #666666;
+                font-weight: 500;
+                margin-bottom: 30px;
+                width: 80%;
+            }
+            p {
+                width: 90%;
+                color: #95989A;
+                font-family: $openSans;
+            }
+        }
+        .images-wrapper {
+            position: relative;
+            max-width: 800px;
+            img {
+                position: absolute;
+                &:first-child {
+                left: 5rem;
+                top: 1rem;
+                }
+                &:nth-child(2) {
+                right: 3rem;
+                bottom: 6rem;
+                }
+            }
+        }
     }
 }

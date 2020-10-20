@@ -110,10 +110,72 @@ a {
   margin-top: 25px;
 }
 
+.about-us {
+  background-color: #F3F7F8;
+}
+
 .about-us .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  height: 670px;
+  padding-top: 120px;
+}
+
+.about-us .container .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15%;
+  padding-bottom: 120px;
+}
+
+.about-us .container .content-wrapper h2 {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+  font-size: 33px;
+}
+
+.about-us .container .content-wrapper h3 {
+  font-family: "Playfair Display", serif;
+  color: #666666;
+  font-weight: 500;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.about-us .container .content-wrapper p {
+  width: 90%;
+  color: #95989A;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-us .container .images-wrapper {
+  position: relative;
+  max-width: 800px;
+}
+
+.about-us .container .images-wrapper img {
+  position: absolute;
+}
+
+.about-us .container .images-wrapper img:first-child {
+  left: 5rem;
+  top: 1rem;
+}
+
+.about-us .container .images-wrapper img:nth-child(2) {
+  right: 3rem;
+  bottom: 6rem;
 }
 /*# sourceMappingURL=style.css.map */
