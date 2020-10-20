@@ -1,0 +1,24 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $mainFont;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}

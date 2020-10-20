@@ -1,0 +1,77 @@
+// fonts used
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans&family=Playfair+Display&display=swap');
+@import '../css/variables';
+@import '../css/resets';
+
+
+
+// start header section
+.header {
+    background: url(../images/header.jpg) no-repeat top center/cover;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(80, 73, 65);
+    .navbar {
+        font-family: $montserrat;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .logo {
+            font-size:1.6rem;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            a {
+                padding: 0 1.6rem;
+                font-weight: 500;
+                font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    // start header wrapper
+    .header-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        padding: 260px 0 240px 0;
+        h1 {
+            font-size: 80px;
+            font-family: $playFair;
+            font-weight: normal;
+        }
+        p {
+            font-family: $openSans;
+            font-size: clamp(1rem, 1.2rem, 1.5rem);
+            width: 35%;
+        }
+        button {
+            font-family: $montserrat;
+            width: 190px;
+            height: 52px;
+            background: $mainBlue 0% 0% no-repeat padding-box;
+            border-radius: 100px;
+            opacity: 1;
+            color: #FFFFFF;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+    }
+}
+
+// start about us section
+.about-us {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
