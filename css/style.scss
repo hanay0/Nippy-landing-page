@@ -17,6 +17,12 @@
         grid-template-columns: repeat(2, 1fr);
         .logo {
             font-size:1.6rem;
+            &::after {
+                content: url(../images/line.png);
+                position: absolute;
+                top: 12px;
+                margin-left: 10px;
+            }
         }
         .nav-links {
             display: flex;
@@ -207,3 +213,101 @@
         }
     }
 }
+
+
+// start subscribe section
+.subscribe {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .subscribe-image {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .subscribe-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0 25%;
+        h3 {
+            font-family: $montserrat;
+            font-size: 33px;
+            color: $mainGrey;
+        }
+        p {
+            padding: 20px 0;
+        }
+        .sub-heading {
+            font-family: $playFair;
+            font-size: 20px;
+            columns: #666666;
+        }
+        .sub-content {
+            font-family: $openSans;
+            font-size: 14px;
+            color: #95989A;
+            line-height: 1.6;
+        }
+        .email-form {
+            width: 100%;
+            display: inline-block;
+            background-color: #555555;
+            position: relative;
+            border-radius: 20px;
+            line-height: 0;
+            margin-top: 1rem;
+            .form-control {
+                display: inline-block;
+                border: 1px solid #1d1d1d;
+                outline: 0;
+                font-size: 1rem;
+                font-family: $playFair;
+                color: $mainGrey;
+                margin: 0;
+                padding: 0 3rem 0 1.5rem;
+                width: 100%;
+                height: 45px;
+                border-radius: 20px;
+            }
+            .submit {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                right: 0px;
+                width: 90px;
+                height: 45px;
+                background-color: $mainBlue;
+                font-size: 12px;
+                font-family: $montserrat;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                outline: 0;
+                border: 0;
+                color: #FFFFFF;
+                cursor: pointer;
+                border-radius: 0 20px 20px 0;
+                a{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+
+// start sponsors section
+.sponsors {
+    background-color: #F3F7F8;
+    padding: 130px 0;
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+}
+
