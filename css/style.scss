@@ -29,10 +29,15 @@
             justify-content: center;
             align-items: center;
             text-transform: uppercase;
+            
             a {
                 padding: 0 1.6rem;
                 font-weight: 500;
                 font-size: 1rem;
+                transition: color .2s linear;
+                &:hover {
+                    color: rgb(52, 83, 223);
+                    }
                 }
             }
         }
@@ -69,6 +74,10 @@
             text-transform: uppercase;
             cursor: pointer;
             margin-top: 25px;
+            transition: all .2s ease;
+            &:hover {
+                background-color: #0c03b8;
+            }
         }
     }
 }
@@ -220,6 +229,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     .subscribe-image {
+        display: inline-flex;
         img {
             width: 100%;
             height: 100%;
@@ -243,7 +253,7 @@
         .sub-heading {
             font-family: $playFair;
             font-size: 20px;
-            columns: #666666;
+            color: #666666;
         }
         .sub-content {
             font-family: $openSans;
@@ -311,3 +321,70 @@
     }
 }
 
+
+// start footer
+footer {
+    background-color: $mainGrey;
+    color: #FFFFFF;
+    padding: 130px 0 50px 0;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 1rem;
+        div {
+            font-size: 14px;
+            font-family: $openSans;
+            &:first-child {
+                font-family: $montserrat;
+                p {
+                font-size:1.6rem;
+                font-weight: bold;
+                    &::after {
+                        content: url(../images/white.png);
+                        position: relative;
+                        left: 20px;
+                        bottom: 5px;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                display: flex;
+                justify-content: start;
+                align-items: flex-start;
+                flex-direction: column;
+                span {
+                    margin: 5px 0;
+                }
+            }
+            &:nth-child(3) {
+                display: flex;
+                justify-content: start;
+                align-items: flex-start;
+                flex-direction: column;
+                
+                span {
+                    margin: 5px 0;
+                }
+            }
+            &:last-child {
+                text-align: right;
+                a {
+                    color: #FFFFFF;
+                    margin: 0 1rem;
+                    transition: all .3s ease;
+                    &:hover {
+                        color: $mainBlue;
+                    }
+                }
+            }
+        }
+    }
+    .copyrights {
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+        font-family: $openSans;
+        color: #666666;
+        margin-top: 50px;
+    }
+}
