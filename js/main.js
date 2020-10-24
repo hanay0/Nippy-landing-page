@@ -1,13 +1,20 @@
+// start navbar toggle 
 
-// selecting the divs which contains the numbers
-let projects = document.querySelector('#projects');
-let customers = document.querySelector('#customers');
-let awards = document.querySelector('#awards');
+let myNav = document.querySelector('.nav-links');
+let icon = document.querySelector('.toggle i');
+const toggleBtn = document.querySelector('.toggle');
 
-function projectsTime() {
-    if(projects.textContent >= 100) {
-        clearInterval();
-    }
+
+toggleBtn.addEventListener('click', function () {
+    toggleNav();
+});
+
+
+function toggleNav() {
+    myNav.classList.toggle('active');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
 }
 
 
+// end navbar toggle 

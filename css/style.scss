@@ -4,14 +4,23 @@
 
 
 
+
 // start header section
 .header {
     background: url(../images/header.jpg) no-repeat top center/cover;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     background-color: rgb(80, 73, 65);
+    position: relative;
     .navbar {
         font-family: $montserrat;
+        .toggle{
+        position: absolute;
+        right: 15%;
+        top: 5%;
+        border: none;
+        padding: 5px 15px;
+        }
     .container {
         display: grid;
         grid-template-columns: 30% 70%;
@@ -29,6 +38,8 @@
             justify-content: flex-end;
             align-items: center;
             text-transform: uppercase;
+            transition: all .3s ease;
+            
             li {
                 padding: 0 1.6rem;
                 a {

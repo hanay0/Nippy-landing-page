@@ -20,7 +20,7 @@
             h1 {
                 font-size: 60px;
             }
-            padding: 15% 0;
+                padding: 15% 0;
             p {
                 width: 90%;
             }
@@ -31,7 +31,8 @@
     .about-us {
         .container {
             .images-wrapper {  
-                justify-content:center;            padding-top: 5%;
+                justify-content:center;
+                padding-top: 5%;
                 img {
                     width: 80%;
                     &:first-child {
@@ -84,6 +85,48 @@
 
 
 // mobile phones media
-// @media (max-width:700px) {
-    
-// }
+@media (max-width:700px) {
+    .header {
+        .navbar {
+            .container {
+                grid-template-columns: 100%;
+                gap:2%;
+                .logo {
+                    text-align: left;
+                    margin-bottom: 5%;
+                }
+                .nav-links {
+                        flex-direction: column;
+                        background-color: rgba(0, 0, 0, .2);
+                        transform: translate3d(0%, -130%, 0);
+                    &.active {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    li {
+                        padding: 1rem 1.6rem;
+                    }
+                }
+            }
+        }  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:700px) {
+    .header {
+        .navbar {
+            .toggle {
+                display:none
+            }
+        }
+    }
+}
