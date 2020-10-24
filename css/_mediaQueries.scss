@@ -1,0 +1,89 @@
+// ipad and tablet media
+@media (max-width:990px) {
+    // start header section
+    .header {
+        .navbar {
+            .container {
+                grid-template-columns: 100%;
+                gap:2%;
+                .logo {
+                    text-align: center;
+                    margin-bottom: 5%;
+                }
+                .nav-links {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+        .header-wrapper {
+            h1 {
+                font-size: 60px;
+            }
+            padding: 15% 0;
+            p {
+                width: 90%;
+            }
+        }
+    }
+
+    // start about-us section
+    .about-us {
+        .container {
+            .images-wrapper {  
+                justify-content:center;            padding-top: 5%;
+                img {
+                    width: 80%;
+                    &:first-child {
+                    margin-right: auto;
+    
+                    }
+                    &:nth-child(2) {
+                    margin-right: -10%;
+                    margin-top: -30%;
+                    }
+                }
+            }
+        }
+    }
+
+     // start testimonials section
+     .testimonials {
+        .container {
+            div {
+                h3 {
+                font-size: 14px;
+                }
+                span {
+                    font-size: 30px;
+                    font-weight: normal;
+                }
+            }
+        }
+     }
+
+     
+    // start subscribe section
+    .subscribe {
+    grid-template-columns: 50% 50%;
+    .subscribe-content {
+        padding: 0 0 0 10%;
+    }
+}
+
+// start footer section
+    footer {
+        .container {
+            grid-template-columns: repeat(2, 1fr);padding: 0 5rem;
+            div {
+                margin-bottom: 2%;
+            }
+        }
+    }
+}
+
+
+// mobile phones media
+// @media (max-width:700px) {
+    
+// }

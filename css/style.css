@@ -37,8 +37,8 @@ a {
 .header .navbar .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
 }
 
 .header .navbar .container .logo {
@@ -56,24 +56,28 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
 }
 
-.header .navbar .container .nav-links a {
+.header .navbar .container .nav-links li {
   padding: 0 1.6rem;
+}
+
+.header .navbar .container .nav-links li a {
+  width: 100%;
   font-weight: 500;
   font-size: 1rem;
   -webkit-transition: color .2s linear;
   transition: color .2s linear;
 }
 
-.header .navbar .container .nav-links a:hover {
+.header .navbar .container .nav-links li a:hover {
   color: #3453df;
 }
 
@@ -180,22 +184,28 @@ a {
 }
 
 .about-us .container .images-wrapper {
-  position: relative;
-}
-
-.about-us .container .images-wrapper img {
-  position: absolute;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about-us .container .images-wrapper img:first-child {
-  left: 5rem;
-  top: 1rem;
+  margin-right: auto;
 }
 
 .about-us .container .images-wrapper img:nth-child(2) {
-  right: 3rem;
-  bottom: 6rem;
+  margin-right: 15%;
+  margin-top: -15%;
 }
 
 .products {
@@ -290,6 +300,7 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
 }
 
 .testimonials .container div {
@@ -324,6 +335,10 @@ a {
 .subscribe .subscribe-image img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 
 .subscribe .subscribe-content {
@@ -511,6 +526,12 @@ footer .container div:nth-child(3) span {
 }
 
 footer .container div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: right;
 }
 
@@ -532,5 +553,71 @@ footer .copyrights {
   font-family: "Open Sans", sans-serif;
   color: #666666;
   margin-top: 50px;
+}
+
+@media (max-width: 990px) {
+  .header .navbar .container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    gap: 2%;
+  }
+  .header .navbar .container .logo {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .header .navbar .container .nav-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header .header-wrapper {
+    padding: 15% 0;
+  }
+  .header .header-wrapper h1 {
+    font-size: 60px;
+  }
+  .header .header-wrapper p {
+    width: 90%;
+  }
+  .about-us .container .images-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 5%;
+  }
+  .about-us .container .images-wrapper img {
+    width: 80%;
+  }
+  .about-us .container .images-wrapper img:first-child {
+    margin-right: auto;
+  }
+  .about-us .container .images-wrapper img:nth-child(2) {
+    margin-right: -10%;
+    margin-top: -30%;
+  }
+  .testimonials .container div h3 {
+    font-size: 14px;
+  }
+  .testimonials .container div span {
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .subscribe {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .subscribe .subscribe-content {
+    padding: 0 0 0 10%;
+  }
+  footer .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 5rem;
+  }
+  footer .container div {
+    margin-bottom: 2%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
