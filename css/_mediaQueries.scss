@@ -30,6 +30,7 @@
     // start about-us section
     .about-us {
         .container {
+            padding-top: 60px ;
             .images-wrapper {  
                 justify-content:center;
                 padding-top: 5%;
@@ -53,7 +54,7 @@
         .container {
             div {
                 h3 {
-                font-size: 14px;
+                font-size: 18px;
                 }
                 span {
                     font-size: 30px;
@@ -86,6 +87,7 @@
 
 // mobile phones media
 @media (max-width:700px) {
+    // start header section
     .header {
         .navbar {
             .container {
@@ -108,7 +110,117 @@
                 }
             }
         }  
+        .header-wrapper {
+            padding: 0;
+        }
     }
+
+    // start about us section
+    .about-us {
+        .container {
+            grid-template-columns: 1fr;
+            padding-top: 25px;
+            .content-wrapper {
+                align-items: center;
+                text-align: center;
+                padding-top: 20%;
+                padding-bottom: 0;
+                p {
+                    line-height: 2;
+                }
+            }
+            .images-wrapper {
+                display: none;
+            }
+        }
+    }
+
+    // start our products section
+    .products {
+        .container {
+            .products-wrapper {
+                grid-template-columns: repeat(2, 1fr);
+                div {
+                    p {
+                        left: 15px;
+                        bottom: 25px;
+                        font-weight: 500;
+                    }
+                    span {
+                        bottom: 5px;
+                    }
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    // start testimonials section
+    .testimonials {
+        padding: 3rem 0;
+        .container {
+            grid-template-columns: 1fr;
+            div {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    // start subscribe section
+    .subscribe {
+        grid-template-columns: 100%;
+        .subscribe-content {
+            padding: 0;
+            margin-bottom: 40px;
+            text-align: center;
+            align-items: center;
+            .email-form {
+                width: 80%;
+                .form-control {
+                    height: 35px;
+                }
+                .submit {
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    // start sponsors section
+    .sponsors {
+        padding: 50px 0;
+        .container {
+            gap: 35px;
+            flex-direction: column;
+            img {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    // start footer section
+    footer {
+        padding: 100px 0 40px 0;
+        .container {
+            grid-template-columns: 100%;
+            gap: 25px;
+            padding: 0 32px;
+            div {
+                text-align:center;
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+                &:last-child {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    } 
 }
 
 
@@ -129,4 +241,26 @@
             }
         }
     }
+}
+
+// for so small screens
+@media (max-width: 450px) {
+    .products {
+        padding-top: 80px;
+        padding-bottom: 70px;
+        .container {
+            .products-heading {
+                h2 {
+                    font-size: 20px;
+                }
+                span {
+                    font-size: 8px;
+                }
+            }
+            .products-wrapper {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+    }  
 }
