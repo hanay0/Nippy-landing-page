@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+        <!-- Aos library -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -36,23 +38,23 @@
 
                 <!-- header and paragraph -->
                 <div class="header-wrapper">
-                        <h1>God is in the details</h1>
-                        <p>Vero nisi doloremque, at accusantium iure, error architecto dolor aperiam aspernatur modi corrupti minus in obcaecati qui.</p>
-                        <button>learn more</button>
+                        <h1 data-aos="fade-down" data-aos-duration="600">God is in the details</h1>
+                        <p data-aos="zoom-in" data-aos-duration="600">Vero nisi doloremque, at accusantium iure, error architecto dolor aperiam aspernatur modi corrupti minus in obcaecati qui.</p>
+                        <button data-aos="fade-up" data-aos-duration="600">learn more</button>
                 </div>
         </section>
 
         <!-- start about us section -->
         <section class="about-us">
             <div class="container">
-                <div class="content-wrapper">
+                <div class="content-wrapper" data-aos="fade-right" data-aos-duration="600">
                     <h2>about us</h2>
                     <h3>Delectus voluptatum tenetur vero eum quos ad dignissimos ipsa praesentium.</h3>
                     <p>Est perspiciatis cupiditate distinctio officiis officia beatae vero assumenda voluptatum. Omnis nulla quos cumque id, necessitatibus sed in exercitationem adipisci, harum velit nam nihil eaque eveniet veniam eos quo, minima qui, rem aspernatur. Vero nisi doloremque, at accusantium iure, dignissimos error architecto dolor.</p>
                 </div>
                 <div class="images-wrapper">
-                    <img src="images/about1.jpg" alt="img1">
-                    <img src="images/about2.jpg" alt="img2">
+                    <img src="images/about1.jpg" alt="img1" data-aos="fade-down" data-aos-duration="800">
+                    <img src="images/about2.jpg" alt="img2" data-aos="fade-left" data-aos-duration="900">
                 </div>
             </div>
         </section>
@@ -68,31 +70,31 @@
                 </div>
                 
                 <div class="products-wrapper">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="500">
                         <img src="images/img1.jpg" alt="product1">
                         <p>modern shelf</p>
                         <span>150$</span>
                     </div>
                     
-                    <div>
+                    <div data-aos="zoom-in-up" data-aos-duration="550">
                         <img src="images/img2.jpg" alt="product2">
                         <p>modern table</p>
                         <span>90$</span>
                     </div>
                     
-                    <div>
+                    <div data-aos="zoom-in-down" data-aos-duration="500">
                         <img src="images/img3.jpg" alt="product3">
                         <p>modern chair</p>
                         <span>120$</span>
                     </div>
                     
-                    <div>
+                    <div data-aos="zoom-in-up" data-aos-duration="600">
                         <img src="images/img4.jpg" alt="product4">
                         <p>classic chair</p>
                         <span>110$</span>
                     </div>
                     
-                    <div>
+                    <div data-aos="zoom-in-down" data-aos-duration="400">
                         <img src="images/img5.jpg" alt="product5">
                         <p>bar chair</p>
                         <span>80$</span>
@@ -105,17 +107,17 @@
         <!-- start testimonials section -->
         <section class="testimonials">
             <div class="container">
-                <div>
+                <div data-aos="zoom-out" data-aos-duration="800"data-aos-delay="150">
                     <h3>projects completed</h3>
                     <span id="projects">285</span>
                 </div>
 
-                <div>
+                <div data-aos="zoom-out" data-aos-duration="800"data-aos-delay="150">
                     <h3>happy customers</h3>
                     <span id="customers">200</span>
                 </div>
 
-                <div>
+                <div data-aos="zoom-out" data-aos-duration="800"data-aos-delay="150">
                     <h3>award winning</h3>
                     <span id="awards">44</span>
                 </div>
@@ -132,12 +134,12 @@
 
 
             <div class="subscribe-content">
-                <h3>Stay in touch</h3>
-                <p class="sub-heading">Subscribe for our monthly roundup of great free resources and updates.</p>
-                <p class="sub-content">Excepturi fugiat a neque perspiciatis dicta, repudiandae dolorum. Corporis, accusantium, at! Numquam ad praesentium blanditiis, recusandae aliquam perferendis molestiae eaque </p>
-                <form name="email-form" method="POST" data-netlify="true">
+                <h3 data-aos="fade-in" data-aos-duration="2200">Stay in touch</h3>
+                <p data-aos="fade-in" data-aos-duration="1800" class="sub-heading">Subscribe for our monthly roundup of great free resources and updates.</p>
+                <p data-aos="fade-in" data-aos-duration="1800" class="sub-content">Excepturi fugiat a neque perspiciatis dicta, repudiandae dolorum. Corporis, accusantium, at! Numquam ad praesentium blanditiis, recusandae aliquam perferendis molestiae eaque </p>
+                <form name="email-form" method="POST" data-netlify="true" data-aos="fade-left">
                     <div class="email-form">
-                        <span class="form-control-wrap">
+                        <sphan class="form-control-wrap">
                             <input type="email" name="email" id="email" size="40" class="form-control" placeholder="Email">
                         </span>
                         <button type="submit" class="form-control submit">
@@ -151,7 +153,7 @@
 
         <!-- start sponsors section -->
         <section class="sponsors">
-            <div class="container">
+            <div class="container" data-aos="zoom-out" data-aos-duration="600"data-aos-delay="100">
                 <img src="images/icon1.png" alt="">
                 <img src="images/icon2.png" alt="">
                 <img src="images/icon3.png" alt="">
@@ -193,5 +195,9 @@
         </footer>
 
         <script src="js/main.js" async defer></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        // initializing AOS library 
+            AOS.init();</script>
     </body>
 </html>
